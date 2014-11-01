@@ -1,18 +1,12 @@
 <!-- Contains the stats of all creatures.
 	Each stat defines how capable the creature is within that category.
-		There are 4 basic stat categories with 2 stats in each:
-		- Power: Total offensive capability of the creature
-			* Strength: The creature's capability to apply force
-			* Attack: How much damage the creature can inflict with an attack
-		- Defense: Overall survivability of the creature
-			* Armor: How difficult it is to harm the creature
-			* Vitality: Amount of damage the creature can withstand
-		- Movement: How fast the creature is
-			* Speed: How quickly the creature can travel
-			* Dexterity: How quickly the creature can attack
-		- Intelligence: How smart the creature is
-			* Intelligence: Creature's capability to learn and use knowledge
-			* Wisdom: How reckless the creature isn't
+		* Strength: The creature's capability to apply force
+		* Attack: How much damage the creature can inflict with an attack
+		* Armor: How difficult it is to harm the creature
+		* Vitality: Amount of damage the creature can withstand
+		* Speed: How quickly the creature can travel
+		* Dexterity: How quickly the creature can attack
+		* Intelligence: Creature's capability to learn and use knowledge
 	In addition to the stat categories, there are also traits.
 	There are 3 traits in total:
 		- Perception: How well the creature can sense things
@@ -32,11 +26,6 @@
 				+ Normal
 				+ Enhanced
 		- Special: Any unique abilities the creature has (will be elaborated in different file)
-		- Temperment: Behavior of the creature towards others (Alignment might be added later)
-			* Personality: Instinctual reaction towards others
-				+ Aggressive
-				+ Neutral
-				+ Timid
 		- Appearance might be added later
 -->
 
@@ -64,9 +53,6 @@
 		<intelligence>
 			
 		</intelligence>
-		<wisdom>
-			
-		</wisdom>
 	</stats>
 	<traits>
 		<perception>
@@ -82,11 +68,6 @@
 		</perception>
 		<special has_special="false">
 		</special>
-		<temperament>
-			<sub_trait type="personality">
-			
-			</sub_trait>
-		</temperament>
 	</traits>
 </creature>
 -->
@@ -114,9 +95,6 @@
 			<intelligence>
 				3
 			</intelligence>
-			<wisdom>
-				3
-			</wisdom>
 		</stats>
 		<traits>
 			<perception>
@@ -135,11 +113,6 @@
 					bite
 				</ability>
 			</special>
-			<temperament>
-				<sub_trait type="personality">
-					neutral
-				</sub_trait>
-			</temperament>
 		</traits>
 	</creature>
 	<creature kind="goliath_beetle">
@@ -165,9 +138,6 @@
 			<intelligence>
 				1
 			</intelligence>
-			<wisdom>
-				1
-			</wisdom>
 		</stats>
 		<traits>
 			<perception>
@@ -186,11 +156,6 @@
 					5
 				</ability>
 			</special>
-			<temperament>
-				<sub_trait type="personality">
-					aggressive
-				</sub_trait>
-			</temperament>
 		</traits>
 	</creature>
 	<creature kind="bear">
@@ -216,9 +181,6 @@
 			<intelligence>
 				4
 			</intelligence>
-			<wisdom>
-				6
-			</wisdom>
 		</stats>
 		<traits>
 			<perception>
@@ -233,11 +195,6 @@
 				</smell>
 			</perception>
 			<special has_special="false" />
-			<temperament>
-				<sub_trait type="personality">
-					aggressive
-				</sub_trait>
-			</temperament>
 		</traits>
 	</creature>
 	<creature kind="mole">
@@ -263,9 +220,6 @@
 			<intelligence>
 				3
 			</intelligence>
-			<wisdom>
-				5
-			</wisdom>
 		</stats>
 		<traits>
 			<perception>
@@ -284,11 +238,6 @@
 					7
 				</ability>
 			</special>
-			<temperament>
-				<sub_trait type="personality">
-					timid
-				</sub_trait>
-			</temperament>
 		</traits>
 	</creature>
 	<creature kind="porcupine">
@@ -314,9 +263,6 @@
 			<intelligence>
 				4
 			</intelligence>
-			<wisdom>
-				3
-			</wisdom>
 		</stats>
 		<traits>
 			<perception>
@@ -339,11 +285,6 @@
 					spines
 				</ability>
 			</special>
-			<temperament>
-				<sub_trait type="personality">
-					aggressive
-				</sub_trait>
-			</temperament>
 		</traits>
 	</creature>
 	<creature kind="raven">
@@ -369,9 +310,6 @@
 			<intelligence>
 				8
 			</intelligence>
-			<wisdom>
-				7
-			</wisdom>
 		</stats>
 		<traits>
 			<perception>
@@ -390,11 +328,6 @@
 					7
 				</ability>
 			</special>
-			<temperament>
-				<sub_trait type="personality">
-					neutral
-				</sub_trait>
-			</temperament>
 		</traits>
 	</creature>
 	<creature kind="octopus">
@@ -420,9 +353,6 @@
 			<intelligence>
 				8
 			</intelligence>
-			<wisdom>
-				8
-			</wisdom>
 		</stats>
 		<traits>
 			<perception>
@@ -444,11 +374,6 @@
 					sight
 				</ability>
 			</special>
-			<temperament>
-				<sub_trait type="personality">
-					aggressive
-				</sub_trait>
-			</temperament>
 		</traits>
 	</creature>
 	<creature kind="cockroach">
@@ -474,9 +399,6 @@
 			<intelligence>
 				1
 			</intelligence>
-			<wisdom>
-				2
-			</wisdom>
 		</stats>
 		<traits>
 			<perception>
@@ -491,11 +413,6 @@
 				</smell>
 			</perception>
 			<special has_special="false" />
-			<temperament>
-				<sub_trait type="personality">
-					timid
-				</sub_trait>
-			</temperament>
 		</traits>
 	</creature>
 	<creature kind="chameleon">
@@ -521,9 +438,6 @@
 			<intelligence>
 				4
 			</intelligence>
-			<wisdom>
-				3
-			</wisdom>
 		</stats>
 		<traits>
 			<perception>
@@ -542,11 +456,6 @@
 					10
 				</ability>
 			</special>
-			<temperament>
-				<sub_trait type="personality">
-					neutral
-				</sub_trait>
-			</temperament>
 		</traits>
 	</creature>
 	<creature kind="rabbit">
@@ -572,9 +481,6 @@
 			<intelligence>
 				2
 			</intelligence>
-			<wisdom>
-				1
-			</wisdom>
 		</stats>
 		<traits>
 			<perception>
@@ -589,11 +495,6 @@
 				</smell>
 			</perception>
 			<special has_special="false" />
-			<temperament>
-				<sub_trait type="personality">
-					timid
-				</sub_trait>
-			</temperament>
 		</traits>
 	</creature>
 </creature_pool>
