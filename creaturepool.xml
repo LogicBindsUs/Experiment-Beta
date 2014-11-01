@@ -1,0 +1,599 @@
+<!-- Contains the stats of all creatures.
+	Each stat defines how capable the creature is within that category.
+		There are 4 basic stat categories with 2 stats in each:
+		- Power: Total offensive capability of the creature
+			* Strength: The creature's capability to apply force
+			* Attack: How much damage the creature can inflict with an attack
+		- Defense: Overall survivability of the creature
+			* Armor: How difficult it is to harm the creature
+			* Vitality: Amount of damage the creature can withstand
+		- Movement: How fast the creature is
+			* Speed: How quickly the creature can travel
+			* Dexterity: How quickly the creature can attack
+		- Intelligence: How smart the creature is
+			* Intelligence: Creature's capability to learn and use knowledge
+			* Wisdom: How reckless the creature isn't
+	In addition to the stat categories, there are also traits.
+	There are 3 traits in total:
+		- Perception: How well the creature can sense things
+			* Sight
+				+ Blind
+				+ Reduced
+				+ Normal
+				+ Enhanced
+			* Hearing
+				+ Deaf
+				+ Reduced
+				+ Normal
+				+ Enhanced
+			* Smell (or taste)
+				+ Anosmic
+				+ Reduced
+				+ Normal
+				+ Enhanced
+		- Special: Any unique abilities the creature has (will be elaborated in different file)
+		- Temperment: Behavior of the creature towards others (Alignment might be added later)
+			* Personality: Instinctual reaction towards others
+				+ Aggressive
+				+ Neutral
+				+ Timid
+		- Appearance might be added later
+-->
+
+<!-- Creature template
+<creature kind=[$name]>
+	<stats>
+		<strength>
+			
+		</strength>
+		<attack>
+			
+		</attack>
+		<armor>
+			
+		</armor>
+		<vitality>
+			
+		</vitality>
+		<speed>
+			
+		</speed>
+		<dexterity>
+			
+		</dexterity>
+		<intelligence>
+			
+		</intelligence>
+		<wisdom>
+			
+		</wisdom>
+	</stats>
+	<traits>
+		<perception>
+			<sight>
+				
+			</sight>
+			<hearing>
+			
+			</hearing>
+			<smell kind="smell">
+				
+			</smell>
+		</perception>
+		<special has_special="false">
+		</special>
+		<temperament>
+			<sub_trait type="personality">
+			
+			</sub_trait>
+		</temperament>
+	</traits>
+</creature>
+-->
+<creature_pool>
+	<creature kind="cobra">
+		<stats>
+			<strength>
+				2
+			</strength>
+			<attack>
+				9
+			</attack>
+			<armor>
+				1
+			</armor>
+			<vitality>
+				4
+			</vitality>
+			<speed>
+				4
+			</speed>
+			<dexterity>
+				2
+			</dexterity>
+			<intelligence>
+				3
+			</intelligence>
+			<wisdom>
+				3
+			</wisdom>
+		</stats>
+		<traits>
+			<perception>
+				<sight>
+					normal
+				</sight>
+				<hearing>
+					deaf
+				</hearing>
+				<smell>
+					enhanced
+				</smell>
+			</perception>
+			<special has_special="true">
+				<ability name="poison">
+					bite
+				</ability>
+			</special>
+			<temperament>
+				<sub_trait type="personality">
+					neutral
+				</sub_trait>
+			</temperament>
+		</traits>
+	</creature>
+	<creature kind="goliath_beetle">
+		<stats>
+			<strength>
+				9
+			</strength>
+			<attack>
+				5
+			</attack>
+			<armor>
+				7
+			</armor>
+			<vitality>
+				3
+			</vitality>
+			<speed>
+				3
+			</speed>
+			<dexterity>
+				3
+			</dexterity>
+			<intelligence>
+				1
+			</intelligence>
+			<wisdom>
+				1
+			</wisdom>
+		</stats>
+		<traits>
+			<perception>
+				<sight>
+					normal
+				</sight>
+				<hearing>
+					reduced
+				</hearing>
+				<smell>
+					normal
+				</smell>
+			</perception>
+			<special has_special="true">
+				<ability name="fly">
+					5
+				</ability>
+			</special>
+			<temperament>
+				<sub_trait type="personality">
+					aggressive
+				</sub_trait>
+			</temperament>
+		</traits>
+	</creature>
+	<creature kind="bear">
+		<stats>
+			<strength>
+				6
+			</strength>
+			<attack>
+				4
+			</attack>
+			<armor>
+				0
+			</armor>
+			<vitality>
+				6
+			</vitality>
+			<speed>
+				7
+			</speed>
+			<dexterity>
+				5
+			</dexterity>
+			<intelligence>
+				4
+			</intelligence>
+			<wisdom>
+				6
+			</wisdom>
+		</stats>
+		<traits>
+			<perception>
+				<sight>
+					normal
+				</sight>
+				<hearing>
+					normal
+				</hearing>
+				<smell>
+					enhanced
+				</smell>
+			</perception>
+			<special has_special="false" />
+			<temperament>
+				<sub_trait type="personality">
+					aggressive
+				</sub_trait>
+			</temperament>
+		</traits>
+	</creature>
+	<creature kind="mole">
+		<stats>
+			<strength>
+				5
+			</strength>
+			<attack>
+				6
+			</attack>
+			<armor>
+				0
+			</armor>
+			<vitality>
+				4
+			</vitality>
+			<speed>
+				2
+			</speed>
+			<dexterity>
+				4
+			</dexterity>
+			<intelligence>
+				3
+			</intelligence>
+			<wisdom>
+				5
+			</wisdom>
+		</stats>
+		<traits>
+			<perception>
+				<sight>
+					blind
+				</sight>
+				<hearing>
+					normal
+				</hearing>
+				<smell>
+					enhanced
+				</smell>
+			</perception>
+			<special has_special="true">
+				<ability name="dig">
+					7
+				</ability>
+			</special>
+			<temperament>
+				<sub_trait type="personality">
+					timid
+				</sub_trait>
+			</temperament>
+		</traits>
+	</creature>
+	<creature kind="porcupine">
+		<stats>
+			<strength>
+				3
+			</strength>
+			<attack>
+				4
+			</attack>
+			<armor>
+				0
+			</armor>
+			<vitality>
+				4
+			</vitality>
+			<speed>
+				4
+			</speed>
+			<dexterity>
+				6
+			</dexterity>
+			<intelligence>
+				4
+			</intelligence>
+			<wisdom>
+				3
+			</wisdom>
+		</stats>
+		<traits>
+			<perception>
+				<sight>
+					normal
+				</sight>
+				<hearing>
+					normal
+				</hearing>
+				<smell>
+					normal
+				</smell>
+			</perception>
+			<special has_special="true">
+				<ability name="spiny_body">
+					2
+				</ability>
+				<ability name="shoot">
+					7
+					spines
+				</ability>
+			</special>
+			<temperament>
+				<sub_trait type="personality">
+					aggressive
+				</sub_trait>
+			</temperament>
+		</traits>
+	</creature>
+	<creature kind="raven">
+		<stats>
+			<strength>
+				3
+			</strength>
+			<attack>
+				4
+			</attack>
+			<armor>
+				0
+			</armor>
+			<vitality>
+				3
+			</vitality>
+			<speed>
+				1
+			</speed>
+			<dexterity>
+				5
+			</dexterity>
+			<intelligence>
+				8
+			</intelligence>
+			<wisdom>
+				7
+			</wisdom>
+		</stats>
+		<traits>
+			<perception>
+				<sight>
+					normal
+				</sight>
+				<hearing>
+					normal
+				</hearing>
+				<smell>
+					normal
+				</smell>
+			</perception>
+			<special has_special="true">
+				<ability name="fly">
+					7
+				</ability>
+			</special>
+			<temperament>
+				<sub_trait type="personality">
+					neutral
+				</sub_trait>
+			</temperament>
+		</traits>
+	</creature>
+	<creature kind="octopus">
+		<stats>
+			<strength>
+				6
+			</strength>
+			<attack>
+				2
+			</attack>
+			<armor>
+				0
+			</armor>
+			<vitality>
+				5
+			</vitality>
+			<speed>
+				3
+			</speed>
+			<dexterity>
+				9
+			</dexterity>
+			<intelligence>
+				8
+			</intelligence>
+			<wisdom>
+				8
+			</wisdom>
+		</stats>
+		<traits>
+			<perception>
+				<sight>
+					normal
+				</sight>
+				<hearing>
+					reduced
+				</hearing>
+				<smell>
+					anosmic
+				</smell>
+			</perception>
+			<special has_special="true">
+				<ability name="swim">
+					5
+				</ability>
+				<ability name="numb_sense">
+					sight
+				</ability>
+			</special>
+			<temperament>
+				<sub_trait type="personality">
+					aggressive
+				</sub_trait>
+			</temperament>
+		</traits>
+	</creature>
+	<creature kind="cockroach">
+		<stats>
+			<strength>
+				1
+			</strength>
+			<attack>
+				1
+			</attack>
+			<armor>
+				10
+			</armor>
+			<vitality>
+				3
+			</vitality>
+			<speed>
+				4
+			</speed>
+			<dexterity>
+				1
+			</dexterity>
+			<intelligence>
+				1
+			</intelligence>
+			<wisdom>
+				2
+			</wisdom>
+		</stats>
+		<traits>
+			<perception>
+				<sight>
+					reduced
+				</sight>
+				<hearing>
+					reduced
+				</hearing>
+				<smell>
+					normal
+				</smell>
+			</perception>
+			<special has_special="false" />
+			<temperament>
+				<sub_trait type="personality">
+					timid
+				</sub_trait>
+			</temperament>
+		</traits>
+	</creature>
+	<creature kind="chameleon">
+		<stats>
+			<strength>
+				2
+			</strength>
+			<attack>
+				3
+			</attack>
+			<armor>
+				1
+			</armor>
+			<vitality>
+				4
+			</vitality>
+			<speed>
+				2
+			</speed>
+			<dexterity>
+				1
+			</dexterity>
+			<intelligence>
+				4
+			</intelligence>
+			<wisdom>
+				3
+			</wisdom>
+		</stats>
+		<traits>
+			<perception>
+				<sight>
+					enhanced
+				</sight>
+				<hearing>
+					reduced
+				</hearing>
+				<smell>
+					normal
+				</smell>
+			</perception>
+			<special has_special="true">
+				<ability name="camouflage">
+					10
+				</ability>
+			</special>
+			<temperament>
+				<sub_trait type="personality">
+					neutral
+				</sub_trait>
+			</temperament>
+		</traits>
+	</creature>
+	<creature kind="rabbit">
+		<stats>
+			<strength>
+				3
+			</strength>
+			<attack>
+				6
+			</attack>
+			<armor>
+				0
+			</armor>
+			<vitality>
+				3
+			</vitality>
+			<speed>
+				9
+			</speed>
+			<dexterity>
+				4
+			</dexterity>
+			<intelligence>
+				2
+			</intelligence>
+			<wisdom>
+				1
+			</wisdom>
+		</stats>
+		<traits>
+			<perception>
+				<sight>
+					normal
+				</sight>
+				<hearing>
+					enhanced
+				</hearing>
+				<smell>
+					enhanced
+				</smell>
+			</perception>
+			<special has_special="false" />
+			<temperament>
+				<sub_trait type="personality">
+					timid
+				</sub_trait>
+			</temperament>
+		</traits>
+	</creature>
+</creature_pool>
